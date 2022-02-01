@@ -6,8 +6,8 @@ Obsoletes:      libva-vdpau-driver < 0.8
 
 %global gitver 15d5a108e7e11c646a74fe8618f7bb13bd49ceb7
 
-Version:        0.0.3
-Release:        4.%{gitver}%{?dist}
+Version:        0.0.4
+Release:        1.%{gitver}%{?dist}
 Source0:        https://github.com/elFarto/nvidia-vaapi-driver/archive/%{gitver}.zip
 
 BuildRequires:  meson
