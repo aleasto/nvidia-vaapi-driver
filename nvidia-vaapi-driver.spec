@@ -4,10 +4,10 @@ License:        MIT
 URL:            https://github.com/elFarto/nvidia-vaapi-driver
 Obsoletes:      libva-vdpau-driver < 0.8
 
-%global gitver 9743e9385c85a249c0d91b881112b0a365782180
+%global gitver 8806b61a66499d7ecac01053e425e4a657d64c59
 
 Version:        0.0.4
-Release:        2.%{gitver}%{?dist}
+Release:        3.%{gitver}%{?dist}
 Source0:        https://github.com/elFarto/nvidia-vaapi-driver/archive/%{gitver}.zip
 
 BuildRequires:  meson
