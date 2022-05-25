@@ -4,11 +4,9 @@ License:        MIT
 URL:            https://github.com/elFarto/nvidia-vaapi-driver
 Obsoletes:      libva-vdpau-driver < 0.8
 
-%global gitver 3765bfdf72c864482326f0ea2f0475e67e8653fe
-
-Version:        0.0.5
-Release:        1.%{gitver}%{?dist}
-Source0:        https://github.com/elFarto/nvidia-vaapi-driver/archive/%{gitver}.zip
+Version:        0.0.6
+Release:        1%{?dist}
+Source0:        https://github.com/elFarto/nvidia-vaapi-driver/archive/v%{version}.zip
 
 BuildRequires:  meson
 BuildRequires:  gcc
@@ -21,7 +19,7 @@ Requires:       mesa-dri-filesystem
 This is an VA-API implementation that uses NVDEC as a backend.
 
 %prep
-%setup -n %{name}-%{gitver}
+%setup -n %{name}-%{version}
 
 %build
 %meson
